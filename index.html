@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksara Tech Indonesia - Professional Tech Partner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content glass-effect">
+            <h2>Selamat Datang!</h2>
+            <p>Siap bertransformasi digital? Beritahu kami nama Anda.</p>
+            <div class="input-group">
+                <input type="text" id="nameInput" class="modal-input" placeholder="Ketik nama Anda..." autocomplete="off">
+            </div>
+            <button id="saveNameBtn" class="btn-modal">Mulai Jelajah</button>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content glass-effect success-theme">
+            <div class="success-icon">✓</div>
+            <h2>Berhasil Terkirim!</h2>
+            <p>Terima kasih. Data Anda telah kami terima dan dapat dilihat pada kartu preview.</p>
+            <button id="closeSuccessBtn" class="btn-modal btn-outline">Lihat Preview</button>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">AKSARA TECH</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#profile" class="nav-item">Our Profile</a></li>
+                <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+                <li><a href="#contact" class="nav-item">Message Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 id="welcomeText">Hi, Welcome to Website</h1>
+            <p class="reveal-text">Solusi teknologi masa depan untuk pertumbuhan bisnis Anda.</p>
+            <a href="#profile" class="btn reveal-text delay-200">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <h2 class="section-title reveal">Our Profile</h2>
+            <div class="profile-banner reveal">
+                <img src="img/bn.png" alt="Team working">
+            </div>
+            <div class="profile-grid">
+                <div class="profile-card reveal from-left">
+                    <h3>About Aksara Tech</h3>
+                    <p>Aksara Tech Indonesia adalah perusahaan teknologi yang berfokus pada transformasi digital. Berdiri sejak 2020, kami membantu bisnis mengadopsi teknologi terbaru.</p>
+                </div>
+                <div class="profile-card reveal from-right">
+                    <h3>Visi & Misi</h3>
+                    <p><strong>Visi:</strong> Menjadi mitra teknologi terdepan di Asia Tenggara.</p>
+                    <p><strong>Misi:</strong> Solusi itif, handal, dan berorientasi pengguna.</p>
+                </div>
+            </div>
+            <div class="hq-section reveal">
+                <h3>Our Headquarters</h3>
+                <div class="hq-grid">
+                    <div class="location-card">
+                        <img src="img/jakarta.jpg" alt="Kantor Jakarta" class="location-image"><p>Jakarta</p>
+                    </div>
+
+                    <div class="location-card">
+                        <img src="img/bandung.jpg" alt="Kantor Bandung" class="location-image"><p>Bandung</p>
+                    </div>
+
+                    <div class="location-card">
+                        <img src="img/surabaya.jpg" alt="Kantor Surabaya" class="location-image"><p>Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="section-title reveal">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal delay-100">
+                    <img src="img/gam1.png" alt="Project 1">
+                    <div class="overlay"><h3>Aplikasi Mobile E-Commerce SwiftCart</h3><p>Mobile Development</p></div>
+                </div>
+                <div class="portfolio-item reveal delay-200">
+                    <img src="img/gam2.png" alt="Project 2">
+                    <div class="overlay"><h3>Website Perusahaan B2B Klien XYZ</h3><p>Web Application</p></div>
+                    </div>
+                <div class="portfolio-item reveal delay-300">
+                    <img src="img/gam3.png" alt="Project 3">
+                    <div class="overlay"><h3>Dashboard Analitik Smart Sales Tracker</h3><p>Data Analysis & Visualization</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title reveal">Message Us</h2>
+            
+            <div class="contact-wrapper">
+                <div class="form-container reveal from-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" id="contactName" placeholder="Masukkan nama anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Tanggal Lahir</label>
+                            <input type="date" id="contactDob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Jenis Kelamin</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="Laki-laki" checked>
+                                    <span class="radio-custom"></span> Pria
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="Perempuan">
+                                    <span class="radio-custom"></span> Wanita
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Pesan</label>
+                            <textarea id="contactMessage" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+
+                <div class="result-container reveal from-right">
+                    <div class="preview-card" id="previewCard">
+                        <div class="card-header">
+                            <h3>Preview Data</h3>
+                        </div>
+                        <div class="card-body" id="resultContent">
+                            <div class="empty-state">
+                                <img src="https://cdn-icons-png.flaticon.com/512/7486/7486744.png" width="60" style="opacity: 0.5; margin-bottom: 10px;">
+                                <p>Belum ada data yang dikirim.<br>Silakan isi formulir di samping.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="modern-footer">
+        <div class="container
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aksara Tech Indonesia. by NindyaAF.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
